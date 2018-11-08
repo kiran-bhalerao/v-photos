@@ -3,8 +3,8 @@
     <div class="ui secondary menu" style="padding:10px">
       <h3 style="padding-left:20px; margin-top:10px;">V-Photos</h3>
         <div v-if="isLoggin" class="right menu">
-          <router-link to="/" class="active item"> Galary </router-link>
-          <router-link to="/upload" class="item"> Upload </router-link>
+          <router-link exact-active-class="active" to="/" class="item"> Galary </router-link>
+          <router-link exact-active-class="active" to="/upload" class="item"> Upload </router-link>
           <a class="ui item" href="#" @click="logout"> Logout </a>
         </div>
          <div v-else class="right menu">
